@@ -24,6 +24,15 @@
     ],
     "description": "Define a function in Nuru"
   },
+  "Anonymous Function / Callback": {
+    "prefix": ["undacallback", "cb"],
+    "body": [
+      "unda(${1:item}) {",
+      "\t${2:rudisha item;}",
+      "}"
+    ],
+    "description": "Anonymous function or callback in Nuru"
+  },
   "If Statement (kama)": {
     "prefix": ["kama", "if"],
     "body": [
@@ -100,5 +109,20 @@
       "};"
     ],
     "description": "Create a dictionary/map"
+  },
+  "Break & Continue": {
+    "prefix": ["acha", "break", "endelea", "continue"],
+    "body": ["acha;"],
+    "description": "Exit loop early with acha"
+  },
+  "Nuru Starter Program": {
+    "prefix": ["nurustarter", "main"],
+    "body": [
+      "andika(\"=== ${1:Programu ya Nuru} ===\");",
+      "",
+      "fanya ${2:jina} = jaza(\"${3:Jina lako ni nani? }\");",
+      "andika(\"Karibu, \" + ${2:jina} + \"!\");"
+    ],
+    "description": "Starter template for a Nuru script"
   }
 }
